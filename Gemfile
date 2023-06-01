@@ -44,7 +44,7 @@ group :development, :test do
   gem "pry"
   gem "shoulda-matchers"
   gem "factory_bot_rails", '~> 6.2.0'
-  gem "faker"
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 end
 
 group :development do
