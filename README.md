@@ -12,7 +12,7 @@ An API to manage customer subscriptions for a subscription tea service.
 1. After bundeling, run bundle exec rspec to run test suite
 
 ## Endpoints
-Create a user subscription:
+1. Create a user subscription:
 POST /api/v1/customers/:id/subscriptions
 request: POST /api/v1/customers/1/subscriptions with subscription params
 response:{
@@ -30,9 +30,9 @@ response:{
     }
 }
 
-Update status of subscription:
-PUT /api/v1/customers/1/subscriptions/1
-request: 
+2. Update status of subscription:
+PUT /api/v1/customers/:id/subscriptions/:id
+request: PUT /api/v1/customers/1/subscriptions/1
 response:{
     "data": {
         "id": "1",
@@ -48,7 +48,7 @@ response:{
     }
 }
 
-Get all customer subecriptions (active & canceled):
+3. Get all customer subecriptions (active & canceled):
 GET /api/v1/customers/:id/subscriptions
 request: GET /api/v1/customers/1/subscriptions
 response:{
