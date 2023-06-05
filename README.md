@@ -14,7 +14,7 @@ An API to manage customer subscriptions for a subscription tea service.
 ## Endpoints
 1. Create a user subscription:
 POST /api/v1/customers/:id/subscriptions
-request: POST /api/v1/customers/1/subscriptions with subscription params
+request: POST /api/v1/customers/1/subscriptions w/ subscription params
 response:{
     "data": {
         "id": "10",
