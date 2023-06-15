@@ -42,7 +42,7 @@ The Tea-scription API was developed as part of the curriculum at Turing School o
 
 ## Getting Started
 
-Below you will see a list of prerequisites and installation steps that you will need to follow to ensure proper function of the api.
+Below you will see a list of prerequisites and steps to install and use this API.
 
 ### Prerequisites
 
