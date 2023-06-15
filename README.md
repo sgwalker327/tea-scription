@@ -1,15 +1,19 @@
 # Tea-scription
-This is an API to manage customer subscriptions for a subscription tea service.
+This is an API to help you manage subscriptions, customers, and teas for your subscription tea service.
 
-## Schema
-![schema](schema_screenshot.png)
+## Built With
+It was built using Ruby, Rails, and PostgreSQL.
+
+![Ruby](https://img.shields.io/badge/Ruby-CC342D.svg?style=for-the-badge&logo=Ruby&logoColor=white)
+![Ruby on Rails](https://img.shields.io/badge/Ruby%20on%20Rails-CC0000.svg?style=for-the-badge&logo=Ruby-on-Rails&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=PostgreSQL&logoColor=white)
 
 ## To use/install
 1. Clone repository to local machine
-2. Run ` bundle `
-3. Create, migrate, and seed database
-3. Run local server using rails s
-4. Use postman/browser to reach endpoints described below
+2. Install gems. Run ` bundle  install ` in you console.
+4. Create, migrate, and seed database by running ` rails db:{create,migrate,seed} ` in your console.
+5. Run local server using ` rails s `
+6. Use postman/browser to reach endpoints described below
 
 ## Testing
 1. After bundling, run  ` bundle exec rspec ` to run test suite
@@ -102,3 +106,6 @@ response:
     ]
 } 
 ```
+## Schema
+![schema](schema_screenshot.png)
+
