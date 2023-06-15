@@ -59,13 +59,13 @@ You must have the following software installed on your system:
 2. Install gems. Run ` bundle  install ` in you console.
 4. Create, migrate, and seed database by running ` rails db:{create,migrate,seed} ` in your console.
 
+## Testing
+1. After bundling, run  ` bundle exec rspec ` to run test suite
+
 ## Usage
 
 1. Run local server using ` rails s `
 2. Use postman/browser to reach endpoints described below
-
-## Testing
-1. After bundling, run  ` bundle exec rspec ` to run test suite
 
 ## Endpoints
 1. Create a user subscription:
