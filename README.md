@@ -1,21 +1,26 @@
 # Tea-scription
-An API to manage customer subscriptions for a subscription tea service.
+This is an API to manage customer subscriptions for a subscription tea service.
 
-## To use
+## Schema
+
+
+## To use/install
 1. Clone repository to local machine
-2. Run bundle
-3. Create,migrate and seed database
+2. Run ` bundle `
+3. Create, migrate, and seed database
 3. Run local server using rails s
 4. Use postman/browser to reach endpoints described below
 
 ## Testing
-1. After bundeling, run bundle exec rspec to run test suite
+1. After bundling, run  ` bundle exec rspec ` to run test suite
 
 ## Endpoints
 1. Create a user subscription:
 POST /api/v1/customers/:id/subscriptions
-request: POST /api/v1/customers/1/subscriptions w/ subscription params
-response:{
+request: POST `/api/v1/customers/1/subscriptions w/ subscription params`
+response:
+``` 
+{
     "data": {
         "id": "10",
         "type": "subscription",
@@ -29,11 +34,14 @@ response:{
         }
     }
 }
+```
 
 2. Update status of subscription:
 PUT /api/v1/customers/:id/subscriptions/:id
-request: PUT /api/v1/customers/1/subscriptions/1
-response:{
+request: PUT `/api/v1/customers/1/subscriptions/1`
+response:
+ ```
+ {
     "data": {
         "id": "1",
         "type": "subscription",
@@ -46,12 +54,14 @@ response:{
             "customer_id": 1
         }
     }
-}
-
+} 
+```
 3. Get all customer subecriptions (active & canceled):
 GET /api/v1/customers/:id/subscriptions
-request: GET /api/v1/customers/1/subscriptions
-response:{
+request: GET `/api/v1/customers/1/subscriptions`
+response:
+```
+ {
     "data": [
         {
             "id": "1",
@@ -90,4 +100,5 @@ response:{
             }
         }
     ]
-}
+} 
+```
