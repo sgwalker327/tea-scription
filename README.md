@@ -2,7 +2,7 @@
 This is an API to manage customer subscriptions for a subscription tea service.
 
 ## Schema
-
+![schema](schema_screenshot.png)
 
 ## To use/install
 1. Clone repository to local machine
